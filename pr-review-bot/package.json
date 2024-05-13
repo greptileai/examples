@@ -1,0 +1,32 @@
+{
+  "name": "greptile-github-app",
+  "version": "0.0.1",
+  "description": "the greptile github app",
+  "main": "app.ts",
+  "scripts": {
+    "start": "tsc --build && node dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.552.0",
+    "@aws-sdk/util-dynamodb": "^3.552.0",
+    "@octokit/auth-app": "^6.1.1",
+    "@octokit/rest": "^20.1.0",
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "octokit": "^3.2.0",
+    "smee-client": "^2.0.1",
+    "winston": "^3.13.0",
+    "winston-cloudwatch": "^6.2.0"
+  },
+  "devDependencies": {
+    "@octokit/types": "^13.4.0",
+    "@types/express": "^4.17.21",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5"
+  }
+}
